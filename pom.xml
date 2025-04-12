@@ -17,18 +17,5 @@
 			</extension>
 		</extensions>
 	</build>
-	
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-			<version>3.4.2</version>
-		</dependency>
-		<dependency>
-			<groupId>com.discord4j</groupId>
-			<artifactId>discord4j-core</artifactId>
-			<version>3.3.0-RC1</version>
-		</dependency>		
-	</dependencies>
 
 </project>
