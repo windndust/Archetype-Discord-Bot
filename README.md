@@ -9,19 +9,21 @@ mvn install
 
 ### Command with placeholders to generate project: ###
 ```
-mvn archetype:generate -DarchetypeGroupId=org.mneidinger.maven.archetype -DarchetypeArtifactId=Archetype-Discord-Bot -DarchetypeVersion=0.0.1-SNAPSHOT \
+mvn archetype:generate \
+-DarchetypeGroupId=org.mneidinger.maven.archetype -DarchetypeArtifactId=Archetype-Discord-Bot -DarchetypeVersion=0.0.1-SNAPSHOT \
 -DgroupId=[insert groupId] -DartifactId=[insert artifactId] -Dversion=[insert version] \
 -Dgoals=compiler.compile<br/>
 ```
 * The "operand" `archetype:generate` references the `archetype` plugin and executes the `generate` goal which uses the archetype project to generate a maven project
-* The rest of the first line specifies the archetype project to use and has to key into an entry in the archetype-catalog.xml
-* Second line specifies the information of your project
-* Third line will compile the new project after creating it. It's optional and not necessary to create projects from an archetype
+* The second line specifies the archetype project to use and has to key into an entry in the archetype-catalog.xml
+* The third line specifies the information of your project
+* The fourth line will compile the new project after creating it. It's optional and not necessary to create projects from an archetype
 
 ### Example Command to generate project: ###
 ```
-mvn archetype:generate -DarchetypeGroupId=org.mneidinger.maven.archetype -DarchetypeArtifactId=Archetype-Discord-Bot -DarchetypeVersion=0.0.1-SNAPSHOT \
--DgroupId=org.mneidinger.discordbot -DartifactId=DiscordBot -Dversion=0.0.1-SNAPSHOT \
+mvn archetype:generate \
+-DarchetypeGroupId=org.mneidinger.maven.archetype -DarchetypeArtifactId=Archetype-Discord-Bot -DarchetypeVersion=0.0.1-SNAPSHOT \
+-DgroupId=org.discordbot -DartifactId=DiscordBot -Dversion=0.0.1-SNAPSHOT \
 -Dgoals=compiler:compile
 ```
 
