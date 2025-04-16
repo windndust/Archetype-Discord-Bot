@@ -1,4 +1,4 @@
-###Instructions to use archetype###
+### Instructions to use archetype ###
 * Clone repo to local environment
 * To install archetype project into your local maven repository and archetype catalog, run:
 
@@ -7,7 +7,7 @@ mvn install
 ```
 
 
-###Command with placeholders to generate project:###
+### Command with placeholders to generate project: ###
 ```
 mvn archetype:generate -DarchetypeGroupId=org.mneidinger.maven.archetype -DarchetypeArtifactId=Archetype-Discord-Bot -DarchetypeVersion=0.0.1-SNAPSHOT \
 -DgroupId=[insert groupId] -DartifactId=[insert artifactId] -Dversion=[insert version] \
@@ -18,14 +18,14 @@ mvn archetype:generate -DarchetypeGroupId=org.mneidinger.maven.archetype -Darche
 * Second line specifies the information of your project
 * Third line will compile the new project after creating it. It's optional and not necessary to create projects from an archetype
 
-###Example Command to generate project:###<br/>
+### Example Command to generate project: ###
 ```
 mvn archetype:generate -DarchetypeGroupId=org.mneidinger.maven.archetype -DarchetypeArtifactId=Archetype-Discord-Bot -DarchetypeVersion=0.0.1-SNAPSHOT \
 -DgroupId=org.mneidinger.discordbot -DartifactId=DiscordBot -Dversion=0.0.1-SNAPSHOT \
 -Dgoals=compiler:compile
 ```
 
-###Notes###
+### Notes ###
 
 This archetype project forces the entered artifactId to all lowercase when injecting into the created project's pom.xml<br/>
 It does leave the artifactId unmanipulated when injecting the value into the name element of the pom.xml
