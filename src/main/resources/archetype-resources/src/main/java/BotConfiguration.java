@@ -2,7 +2,6 @@ package ${package};
 
 import java.util.List;
 
-import org.mneidinger.discordbot.BotConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
